@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.16"/>
     </dependencies>
     <scenes>
-        <!--TestBView Controller-->
+        <!--TestAView Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" userLabel="TestBView Controller" customClass="TestBViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="TestAView Controller" customClass="TestAViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,16 +16,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVN-Ei-f2y">
-                                <rect key="frame" x="103" y="230" width="395" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="cWD-3a-sQ1">
+                                <rect key="frame" x="201" y="215" width="198" height="70"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Tap here to check if TestA is installed"/>
+                                <state key="normal">
+                                    <string key="title">Tap here to check
+if TestB is installed</string>
+                                </state>
                                 <connections>
-                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eQN-QL-ULe"/>
+                                    <action selector="buttonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W0N-LU-yG9"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H4q-Wz-isN">
-                                <rect key="frame" x="271" y="371" width="59" height="29"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieW-um-S0F">
+                                <rect key="frame" x="271" y="385" width="59" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -33,14 +36,14 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="H4q-Wz-isN" firstAttribute="top" secondItem="HVN-Ei-f2y" secondAttribute="bottom" constant="100" id="Fz9-Qm-K2o"/>
-                            <constraint firstItem="H4q-Wz-isN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="G8Y-e8-BJR"/>
-                            <constraint firstItem="HVN-Ei-f2y" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HWb-oz-koD"/>
-                            <constraint firstItem="HVN-Ei-f2y" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="dnQ-SC-X53"/>
+                            <constraint firstItem="ieW-um-S0F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3OI-n5-kFD"/>
+                            <constraint firstItem="ieW-um-S0F" firstAttribute="top" secondItem="cWD-3a-sQ1" secondAttribute="bottom" constant="100" id="A0F-Q4-vYT"/>
+                            <constraint firstItem="cWD-3a-sQ1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bh8-Mx-LY6"/>
+                            <constraint firstItem="cWD-3a-sQ1" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="Yfk-xw-TVC"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="H4q-Wz-isN" id="tCq-mt-eba"/>
+                        <outlet property="resultLabel" destination="ieW-um-S0F" id="OjM-21-crm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
