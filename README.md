@@ -3,28 +3,25 @@ iOS 9 introduces LSApplicationQueriesSchemes to allow apps to query if other app
 
 In its info.plist file TestA defines the following URL schemes: 
 
-'''
+```
 <key>CFBundleURLSchemes</key>
 <array>
   <string>testA</string>
 </array>
-'''
+```
 
 TestB wants to check if TestA is installed by calling
 
-'''
+```
 BOOL canBeOpened = [[UIApplication sharedApplication] 
                    canOpenURL:[NSURL URLWithString:@"TestA.scheme2://"]];
-'''
+```
 
 This is normally not allowed in iOS9. But by adding the following code to TestB's info.plist file, the query will return YES:
 
-'''
+```
 <key>LSApplicationQueriesSchemes</key>
 <array>
   <string>TestA</string>
 </array>
-'''
-
-
-~~Test~~
+```
