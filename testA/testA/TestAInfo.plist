@@ -28,16 +28,17 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>${PRODUCT_NAME}</string>
-			</array>            
+				<string>${PRODUCT_NAME:rfc1034identifier}.scheme2</string>
+			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>TestB</string>
-    </array>
-    
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>TestB</string>
+		<string>TestB.scheme2</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>

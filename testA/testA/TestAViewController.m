@@ -26,7 +26,7 @@
 
 - (IBAction)buttonPressed:(id)sender {
     BOOL canBeOpened = [[UIApplication sharedApplication]
-                        canOpenURL:[NSURL URLWithString:@"TestB://"]];
+                        canOpenURL:[NSURL URLWithString:@"TestB.scheme2://"]];
     
     if (canBeOpened) {
         _resultLabel.hidden = NO;
