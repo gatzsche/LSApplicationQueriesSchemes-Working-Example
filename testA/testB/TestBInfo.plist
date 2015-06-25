@@ -31,11 +31,10 @@
 			</array>
 		</dict>
 	</array>
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>TestA</string>
-        <string>TestB</string>
-    </array>    
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>TestA</string>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>

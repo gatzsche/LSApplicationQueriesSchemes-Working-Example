@@ -33,7 +33,6 @@
 	</array>
     <key>LSApplicationQueriesSchemes</key>
     <array>
-        <string>TestA</string>
         <string>TestB</string>
     </array>
     
